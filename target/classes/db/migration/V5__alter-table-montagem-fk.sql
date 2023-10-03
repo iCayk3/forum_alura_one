@@ -1,0 +1,7 @@
+ALTER TABLE topicos ADD FOREIGN KEY (id_autor) REFERENCES usuarios (id);
+
+ALTER TABLE topicos ADD FOREIGN KEY (id_curso) REFERENCES cursos (id);
+
+ALTER TABLE respostas ADD FOREIGN KEY (ID_TOPICO) REFERENCES topicos (id);
+
+ALTER TABLE respostas ADD FOREIGN KEY (ID_AUTOR) REFERENCES USUARIOS (id);
